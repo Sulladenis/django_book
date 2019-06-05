@@ -4,9 +4,9 @@ __pycache__/
 *$py.class
 
 # Django stuff:
-*.log
-local_settings.py
-db.sqlite3
+# *.log
+# local_settings.py
+# db.sqlite3
 
 # Visual Studio Code
 # vsc.code-workspace
