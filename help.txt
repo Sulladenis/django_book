@@ -1,8 +1,9 @@
 https://github.github.com/training-kit/downloads/ru/github-git-cheat-sheet/
 .\Code\django_book\samplesite
 
-git init       #
-[.git]         #
+git init
+[.git]
+git status
 
 # Добавляет все файлы в локальный репозиторий и размещает их для фиксации.
 git add . 
