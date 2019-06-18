@@ -20,3 +20,5 @@ git push origin master (git push -f origin master)
 # Загружает историю из удалённого репозитория и объединяет её с локальной. pull = fetch + merge
 git pull
 
+
+
