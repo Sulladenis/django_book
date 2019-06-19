@@ -12,6 +12,7 @@
             <h1>Обьявления</h1>
         </header>
         <nav>
+            <a href="{% url 'admin:index' %}">Админ</a>
             <a href="{% url 'index' %}">Главная</a>
             <a href="{% url 'add' %}">Добавить </a>
             {% for rubric in rubrics %}
