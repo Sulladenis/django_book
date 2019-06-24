@@ -27,6 +27,7 @@ class Bb(models.Model):
         ordering = ['-published']
         unique_together = ('title', 'published')
         get_latest_by = ('published')
+#        order_with_respect_to = 'rubric'
 
 class Rubric(models.Model):
     name = models.CharField(max_length=15, verbose_name='Название')
@@ -42,10 +43,16 @@ class Rubric(models.Model):
 class AdvUser(User):
     is_activated = models.BooleanField(default=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, parent_link=True)
-
+    
 class Spare(models.Model):
     name = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.name
 
 class Machine(models.Model):
     name = models.CharField(max_length=30)
     spares = models.ManyToManyField(Spare)
+
+    def __str__(self):
+        return self.name
