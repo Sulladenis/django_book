@@ -1,4 +1,4 @@
-https://github.github.com/training-kit/downloads/ru/github-git-cheat-sheet/
+﻿https://github.github.com/training-kit/downloads/ru/github-git-cheat-sheet/
 .\Code\django_book\samplesite
 
 git init
@@ -19,6 +19,5 @@ git remote -v
 git push origin master (git push -f origin master)
 # Загружает историю из удалённого репозитория и объединяет её с локальной. pull = fetch + merge
 git pull
-
 
 
